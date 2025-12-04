@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SMS Generator</string>
+    <string name="start_date">Start Date (dd/mm/yyyy)</string>
+    <string name="end_date">End Date (dd/mm/yyyy)</string>
+    <string name="num_of_messages">Number of messages</string>
+    <string name="enter_specific_sms">Enter specific SMS</string>
+    <string name="send_batch_sms">Send Batch SMS</string>
+    <string name="send_manual_sms">Send Manual SMS</string>
+</resources>

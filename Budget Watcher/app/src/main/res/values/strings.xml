@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Budget Watcher</string>
+    <string name="Back"><![CDATA[<-]]></string>
+    <string name="select_end_date">Select End Date</string>
+    <string name="select_start_date">Select Start Date</string>
+    <string name="view_aggregated_transactions">View Aggregated Transactions</string>
+    <string name="extract_sms_messages">Extract SMS Messages</string>
+</resources>

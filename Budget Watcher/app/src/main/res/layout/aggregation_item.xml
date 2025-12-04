@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="?android:attr/selectableItemBackground">
+
+    <!-- Date Range -->
+    <TextView
+        android:id="@+id/tvDateRange"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Date Range: 01/01/2024 - 31/01/2024"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvTags"
+        android:paddingBottom="8dp" />
+
+    <!-- Tags associated with the aggregation -->
+    <TextView
+        android:id="@+id/tvTags"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Tags: food, expense, restaurant"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@id/tvDateRange"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvTotalAmount"
+        android:paddingBottom="8dp" />
+
+    <!-- Total Aggregated Amount -->
+    <TextView
+        android:id="@+id/tvTotalAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Total: R15,000.00"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_red_dark"
+        app:layout_constraintTop_toBottomOf="@id/tvTags"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/startDate"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:hint="@string/start_date" />
+
+    <EditText
+        android:id="@+id/endDate"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:hint="@string/end_date" />
+
+    <EditText
+        android:id="@+id/numMessages"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:hint="@string/num_of_messages" />
+
+    <Spinner
+        android:id="@+id/emulatorSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <EditText
+        android:id="@+id/manualMessage"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:hint="@string/enter_specific_sms" />
+
+    <Button
+        android:id="@+id/sendBatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onBtnSendBatchClicked"
+        android:text="@string/send_batch_sms" />
+
+    <Button
+        android:id="@+id/sendManual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onBtnSendManualClicked"
+        android:text="@string/send_manual_sms" />
+</LinearLayout>
